@@ -3,18 +3,14 @@
 import Image from "next/image";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useLocale } from "@/components/providers";
 import { ui } from "@/lib/content";
 
 export function Nav() {
   const { locale, setLocale } = useLocale();
-  const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const { setTheme } = useTheme();
   const t = ui[locale];
-
-  useEffect(() => setMounted(true), []);
 
   return (
     <header className="sticky top-0 z-50 border-b border-dashed border-border/60 bg-background/80 backdrop-blur-md">
@@ -55,14 +51,19 @@ export function Nav() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+            onClick={() =>
+              setTheme(
+                document.documentElement.classList.contains("dark")
+                  ? "light"
+                  : "dark",
+              )
+            }
             aria-label="Toggle theme"
           >
-            {mounted && resolvedTheme === "dark" ? (
-              <Sun className="size-4" />
-            ) : (
-              <Moon className="size-4" />
-            )}
+            {/* the active theme is a class on <html>, so CSS picks the icon
+                and the server render never guesses wrong */}
+            <Sun className="hidden size-4 dark:block" />
+            <Moon className="size-4 dark:hidden" />
           </Button>
         </div>
       </nav>
