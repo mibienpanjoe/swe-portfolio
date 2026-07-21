@@ -32,14 +32,6 @@ export const metadata: Metadata = {
     url: "https://mibienpan.me",
     siteName: "PARE Mibienpan Joseph",
     type: "website",
-    images: [
-      {
-        url: "/images/banner-hero.jpeg",
-        width: 1472,
-        height: 452,
-        alt: "PARE Mibienpan Joseph — Software Developer",
-      },
-    ],
   },
 };
 
