@@ -24,12 +24,22 @@ export const metadata: Metadata = {
   title: "PARE Mibienpan Joseph — Software Developer",
   description:
     "Software developer from Burkina Faso. I build AI-powered products end to end — Go CLIs, terminal UIs, and full-stack web apps.",
-  metadataBase: new URL("https://mibienpanjoe.vercel.app"),
+  metadataBase: new URL("https://mibienpan.me"),
   openGraph: {
     title: "PARE Mibienpan Joseph — Software Developer",
     description:
       "Software developer from Burkina Faso. I build AI-powered products end to end.",
-    images: ["/images/banner-hero.jpeg"],
+    url: "https://mibienpan.me",
+    siteName: "PARE Mibienpan Joseph",
+    type: "website",
+    images: [
+      {
+        url: "/images/banner-hero.jpeg",
+        width: 1472,
+        height: 452,
+        alt: "PARE Mibienpan Joseph — Software Developer",
+      },
+    ],
   },
 };
 
