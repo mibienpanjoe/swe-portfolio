@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# swe-portfolio
 
-## Getting Started
+Personal portfolio of **PARE Mibienpan Joseph** — software developer & aspiring software engineer from Burkina Faso. Built to showcase my skills, education, certifications and the projects I'm most proud of.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Bilingual** — English / French toggle, persisted per visitor
+- **Dark / light theme** — dark by default
+- **Live GitHub activity** — contribution heatmap fetched server-side, revalidated daily
+- **Featured projects** — real screenshots, tech chips with brand icons, GitHub + live links
+- **CV download** and direct contact actions
+- Fully responsive, zero console errors, accessible link semantics
+
+## Stack
+
+| Layer | Choice |
+|---|---|
+| Framework | Next.js (App Router, TypeScript) |
+| Styling | Tailwind CSS + shadcn/ui |
+| Fonts | Geist Sans / Mono, Instrument Serif |
+| Icons | lucide-react + simple-icons |
+| Theming | next-themes |
+| Deploy | Vercel |
+
+## Structure
+
+```
+src/
+├── app/            # layout, page, favicon
+├── components/     # nav, hero, education, projects, certifications, toolkit, footer
+│   └── ui/         # shadcn/ui primitives
+└── lib/
+    ├── content.ts  # ALL site copy — EN + FR, projects, certs, skills
+    └── github.ts   # contribution heatmap fetcher
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+All text lives in `src/lib/content.ts` — edit both locales in one place, no component changes needed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm install
+pnpm dev     # http://localhost:3000
+pnpm build   # production build
+```
