@@ -14,7 +14,7 @@ import {
   siLinux,
   siMongodb,
   siNextdotjs,
-  siNodedotjs,
+siNodedotjs,
   siOpenjdk,
   siPostgresql,
   siPython,
@@ -29,6 +29,8 @@ import {
   siTypescript,
   siVercel,
   siWhatsapp,
+  siVuedotjs,
+  siAngular,
   type SimpleIcon,
 } from "simple-icons";
 import { cn } from "@/lib/utils";
@@ -43,6 +45,8 @@ const icons: Record<string, SimpleIcon> = {
   Rust: siRust,
   React: siReact,
   "Next.js": siNextdotjs,
+  Vue: siVuedotjs,
+  Angular: siAngular,
   "Node.js": siNodedotjs,
   Express: siExpress,
   FastAPI: siFastapi,

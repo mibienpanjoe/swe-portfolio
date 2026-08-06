@@ -38,7 +38,7 @@ function getSnapshot(): Locale {
   } catch {
     // localStorage can throw when the browser blocks storage access
   }
-  return navigator.language.toLowerCase().startsWith("fr") ? "fr" : "en";
+  return "en";
 }
 
 // the markup is prerendered in English; the client swaps after hydration

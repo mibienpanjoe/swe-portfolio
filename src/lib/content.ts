@@ -110,7 +110,7 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "web",
     label: { en: "Web", fr: "Web" },
-    items: ["React", "Next.js", "Node.js", "Express", "FastAPI", "TailwindCSS", "shadcn/ui"],
+    items: ["React", "Next.js", "Vue", "Angular", "Node.js", "Express", "FastAPI"],
   },
   {
     id: "cli",
