@@ -142,6 +142,14 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    name: {
+      en: "Cloud Computing Fundamentals",
+      fr: "Fondamentaux du cloud computing",
+    },
+    issuer: "Educative",
+    date: { en: "August 2026", fr: "Août 2026" },
+  },
+  {
     name: { en: "Claude Code in Action", fr: "Claude Code in Action" },
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
