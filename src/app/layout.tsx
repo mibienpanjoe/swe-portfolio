@@ -24,7 +24,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: "PARE Mibienpan Joseph — Software Developer",
   description:
-    "Software developer from Burkina Faso. I build AI-powered products end to end — Go CLIs, terminal UIs, and full-stack web apps.",
+    "Software developer from Burkina Faso. I build AI-powered products end to end: Go CLIs, terminal UIs, and full-stack web apps.",
   metadataBase: new URL("https://mibienpan.me"),
   openGraph: {
     title: "PARE Mibienpan Joseph — Software Developer",

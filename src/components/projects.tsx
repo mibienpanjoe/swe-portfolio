@@ -57,7 +57,7 @@ export function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={`${project.name} — ${t.projects.code}`}
+                        aria-label={`${project.name}: ${t.projects.code}`}
                       />
                     }
                   >
@@ -74,7 +74,7 @@ export function Projects() {
                           href={project.live}
                           target="_blank"
                           rel="noreferrer"
-                          aria-label={`${project.name} — ${t.projects.live}`}
+                          aria-label={`${project.name}: ${t.projects.live}`}
                         />
                       }
                     >

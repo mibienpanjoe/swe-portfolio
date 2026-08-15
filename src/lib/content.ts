@@ -27,8 +27,8 @@ export const projects: Project[] = [
     image: "/images/projects/mansa.png",
     gradient: "from-emerald-500/60 via-teal-600/40 to-neutral-900",
     description: {
-      en: "AI sales assistant that runs WhatsApp sales for West African merchants — answers customers in French 24/7, verifies Orange & Moov Money receipts, coordinates delivery and ships an end-of-day sales summary.",
-      fr: "Assistant commercial IA qui gère les ventes WhatsApp des commerçants ouest-africains — répond aux clients en français 24h/24, vérifie les reçus Orange & Moov Money, coordonne les livraisons et envoie un résumé des ventes en fin de journée.",
+      en: "AI sales assistant that runs WhatsApp sales for West African merchants: answers customers in French 24/7, verifies Orange & Moov Money receipts, coordinates delivery and ships an end-of-day sales summary.",
+      fr: "Assistant commercial IA qui gère les ventes WhatsApp des commerçants ouest-africains : répond aux clients en français 24h/24, vérifie les reçus Orange & Moov Money, coordonne les livraisons et envoie un résumé des ventes en fin de journée.",
     },
   },
   {
@@ -52,8 +52,8 @@ export const projects: Project[] = [
     image: "/images/projects/genius.png",
     gradient: "from-violet-500/60 via-purple-600/40 to-neutral-900",
     description: {
-      en: "Terminal study environment in Go that turns lecture PDFs/PPTs into study guides, revision Q&A and interactive quizzes — with vision-model captioning that keeps figures and notation faithful.",
-      fr: "Environnement d'étude en terminal écrit en Go qui transforme les PDF/PPT de cours en fiches, Q&R de révision et quiz interactifs — avec un sous-titrage par modèle de vision fidèle aux figures et notations.",
+      en: "Terminal study environment in Go that turns lecture PDFs/PPTs into study guides, revision Q&A and interactive quizzes, with vision-model captioning that keeps figures and notation faithful.",
+      fr: "Environnement d'étude en terminal écrit en Go qui transforme les PDF/PPT de cours en fiches, Q&R de révision et quiz interactifs, avec un sous-titrage par modèle de vision fidèle aux figures et notations.",
     },
   },
   {
@@ -64,8 +64,8 @@ export const projects: Project[] = [
     image: "/images/projects/scholar-ops.png",
     gradient: "from-rose-500/60 via-red-600/40 to-neutral-900",
     description: {
-      en: "AI-powered scholarship search system that runs entirely on your machine — built in Rust for students hunting funding without giving their data away.",
-      fr: "Système de recherche de bourses propulsé par l'IA qui tourne entièrement en local — écrit en Rust pour les étudiants qui cherchent un financement sans céder leurs données.",
+      en: "AI-powered scholarship search system that runs entirely on your machine, built in Rust for students hunting funding without giving their data away.",
+      fr: "Système de recherche de bourses propulsé par l'IA qui tourne entièrement en local, écrit en Rust pour les étudiants qui cherchent un financement sans céder leurs données.",
     },
   },
   {
@@ -89,8 +89,8 @@ export const projects: Project[] = [
     image: "/images/projects/torL.png",
     gradient: "from-cyan-500/60 via-teal-600/40 to-neutral-900",
     description: {
-      en: "A fast, dependency-light BitTorrent client built in Node.js with a TUI in Go — torrent files and magnet links, UDP/HTTP trackers plus Mainline DHT, rarest-first piece selection, pause/resume and UPnP/NAT-PMP port mapping.",
-      fr: "Un client BitTorrent rapide et léger écrit en Node.js avec une interface TUI en Go — fichiers .torrent et liens magnet, trackers UDP/HTTP plus DHT Mainline, sélection rarest-first, pause/reprise et mapping de ports UPnP/NAT-PMP.",
+      en: "A fast, dependency-light BitTorrent client built in Node.js with a TUI in Go: torrent files and magnet links, UDP/HTTP trackers plus Mainline DHT, rarest-first piece selection, pause/resume and UPnP/NAT-PMP port mapping.",
+      fr: "Un client BitTorrent rapide et léger écrit en Node.js avec une interface TUI en Go : fichiers .torrent et liens magnet, trackers UDP/HTTP plus DHT Mainline, sélection rarest-first, pause/reprise et mapping de ports UPnP/NAT-PMP.",
     },
   },
 ];
@@ -171,8 +171,8 @@ export const certifications: Certification[] = [
   },
   {
     name: {
-      en: "HTML5, Python & Flask — Complete Course",
-      fr: "HTML5, Python & Flask — Cours complet",
+      en: "HTML5, Python & Flask: Complete Course",
+      fr: "HTML5, Python & Flask : cours complet",
     },
     issuer: "Udemy",
     date: { en: "June 2025", fr: "Juin 2025" },
@@ -184,10 +184,10 @@ export const ui = {
     nav: { education: "Education", projects: "Projects", certifications: "Certifications" },
     hero: {
       hireMe: "HIRE ME",
-      role: "Software Developer · Aspiring Software Engineer",
+      role: "Fullstack Software Engineer",
       bio1: "I'm a software developer who builds ",
       bio1Bold: "AI-powered products",
-      bio2: " end to end — from ",
+      bio2: " end to end: from ",
       bio2Bold: "Go CLIs and terminal UIs",
       bio3: " to full-stack web apps with ",
       bio4: ". Focused on agentic systems that do real work for real people.",
@@ -212,7 +212,7 @@ export const ui = {
       eduDetails: [
         "Theory of Computation",
         "Web Programming",
-        "OOP Analysis & Design",
+        "OOAD",
         "Data Structures & Algorithms",
       ],
       coursework: "Relevant coursework",
@@ -231,10 +231,10 @@ export const ui = {
     nav: { education: "Éducation", projects: "Projets", certifications: "Certifications" },
     hero: {
       hireMe: "EMBAUCHEZ-MOI",
-      role: "Développeur logiciel · Aspirant ingénieur logiciel",
+      role: "Ingénieur logiciel full-stack",
       bio1: "Je suis un développeur logiciel qui construit des ",
       bio1Bold: "produits propulsés par l'IA",
-      bio2: " de bout en bout — des ",
+      bio2: " de bout en bout : des ",
       bio2Bold: "CLI Go et interfaces terminal",
       bio3: " aux applications web full-stack avec ",
       bio4: ". Concentré sur des systèmes agentiques qui font un vrai travail pour de vraies personnes.",
@@ -259,7 +259,7 @@ export const ui = {
       eduDetails: [
         "Théorie du calcul",
         "Programmation Web",
-        "Analyse & conception OO",
+        "OOAD",
         "Structures de données & algorithmes",
       ],
       coursework: "Cours pertinents",
