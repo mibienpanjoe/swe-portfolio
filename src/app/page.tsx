@@ -2,6 +2,7 @@ import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
 import { Toolkit } from "@/components/toolkit";
 import { Education } from "@/components/education";
+import { Experience } from "@/components/experience";
 import { Certifications } from "@/components/certifications";
 import { Projects } from "@/components/projects";
 import { Footer } from "@/components/footer";
@@ -16,6 +17,7 @@ export default async function Home() {
       <Nav />
       <main className="mx-auto w-full max-w-3xl flex-1 px-4">
         <Hero contributions={contributions} />
+        <Experience />
         <Education />
         <Projects />
         <Certifications />

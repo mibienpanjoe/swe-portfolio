@@ -25,7 +25,10 @@ export function Nav() {
           />
         </a>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <a href="#education" className="transition-colors hover:text-foreground">
+          <a href="#experience" className="transition-colors hover:text-foreground">
+            {locale === "fr" ? "Expérience" : "Experience"}
+          </a>
+          <a href="#education" className="hidden transition-colors hover:text-foreground sm:block">
             {t.nav.education}
           </a>
           <a href="#projects" className="transition-colors hover:text-foreground">

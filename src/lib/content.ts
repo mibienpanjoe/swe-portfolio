@@ -19,16 +19,14 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "mansa",
-    name: "Mansa",
-    tech: ["TypeScript", "WhatsApp API", "Mobile Money", "AI Agents"],
-    github: "https://github.com/mibienpanjoe/Mansa",
-    live: "https://mansa.page",
-    image: "/images/projects/mansa.png",
+    id: "lyn",
+    name: "Lyn",
+    tech: ["Rust", "Tauri", "Svelte", "SQLite"],
+    github: "https://github.com/mibienpanjoe/lyn",
     gradient: "from-emerald-500/60 via-teal-600/40 to-neutral-900",
     description: {
-      en: "AI sales assistant that runs WhatsApp sales for West African merchants: answers customers in French 24/7, verifies Orange & Moov Money receipts, coordinates delivery and ships an end-of-day sales summary.",
-      fr: "Assistant commercial IA qui gère les ventes WhatsApp des commerçants ouest-africains : répond aux clients en français 24h/24, vérifie les reçus Orange & Moov Money, coordonne les livraisons et envoie un résumé des ventes en fin de journée.",
+      en: "Local-first desktop app for developers that captures notes, screenshots and voice memos without breaking flow. Associates captures with their project and Git branch, with a chronological library and local search. Core data stays on your machine.",
+      fr: "Application de bureau pour développeurs qui capture notes, captures d’écran et mémos vocaux sans interrompre le travail. Associe chaque capture à son projet et à sa branche Git, avec une bibliothèque chronologique et une recherche locale. Les données restent sur votre machine.",
     },
   },
   {
@@ -135,6 +133,8 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export type Certification = {
+  file?: string;
+  verify?: string;
   name: Record<Locale, string>;
   issuer: string;
   date: Record<Locale, string>;
@@ -142,27 +142,56 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
+    name: { en: "Learn AWS", fr: "Apprendre AWS" },
+    file: "/certificates/bootdev-aws.png",
+    issuer: "Boot.dev",
+    date: { en: "September 2026", fr: "Septembre 2026" },
+  },
+  {
+    name: { en: "Learn Docker", fr: "Apprendre Docker" },
+    issuer: "Boot.dev",
+    date: { en: "August 2026", fr: "Août 2026" },
+    file: "/certificates/bootdev-docker.png",
+  },
+  {
+    name: { en: "Learn Linux", fr: "Apprendre Linux" },
+    issuer: "Boot.dev",
+    date: { en: "August 2026", fr: "Août 2026" },
+    file: "/certificates/bootdev-linux.png",
+  },
+  {
     name: {
       en: "Cloud Computing Fundamentals",
       fr: "Fondamentaux du cloud computing",
     },
     issuer: "Educative",
+    file: "/certificates/educative-cloud.png",
     date: { en: "August 2026", fr: "Août 2026" },
   },
   {
     name: { en: "Claude Code in Action", fr: "Claude Code in Action" },
+    file: "/certificates/claude-code.pdf",
+    verify: "https://verify.skilljar.com/c/k4ety3t79bf5",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
   },
   {
     name: { en: "Introduction to Subagents", fr: "Introduction aux sous-agents" },
+    file: "/certificates/subagents.pdf",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
   },
   {
     name: { en: "Introduction to Agent Skills", fr: "Introduction aux Agent Skills" },
+    file: "/certificates/agent-skills.pdf",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
+  },
+  {
+    name: { en: "AI Fluency for Students", fr: "Maîtrise de l’IA pour les étudiants" },
+    issuer: "Anthropic",
+    date: { en: "March 2026", fr: "Mars 2026" },
+    file: "/certificates/ai-fluency.pdf",
   },
   {
     name: {
@@ -170,10 +199,14 @@ export const certifications: Certification[] = [
       fr: "Algorithmes JavaScript & structures de données",
     },
     issuer: "freeCodeCamp",
+    file: "/certificates/freecodecamp-javascript.png",
+    verify: "https://www.freecodecamp.org/certification/fcc79b293b5-13b0-4d34-bd66-94e1cfc18817/javascript-algorithms-and-data-structures",
     date: { en: "August 2025", fr: "Août 2025" },
   },
   {
     name: { en: "Responsive Web Design Developer", fr: "Responsive Web Design" },
+    file: "/certificates/freecodecamp-responsive-web-design.png",
+    verify: "https://www.freecodecamp.org/certification/fcc79b293b5-13b0-4d34-bd66-94e1cfc18817/responsive-web-design",
     issuer: "freeCodeCamp",
     date: { en: "June 2025", fr: "Juin 2025" },
   },
