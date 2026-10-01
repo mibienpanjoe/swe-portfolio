@@ -103,12 +103,12 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "languages",
     label: { en: "Languages", fr: "Langages" },
-    items: ["Go", "TypeScript", "JavaScript", "Python", "C", "Java", "Rust"],
+    items: ["Go", "Python", "TypeScript", "Rust", "C"],
   },
   {
     id: "web",
-    label: { en: "Web", fr: "Web" },
-    items: ["React", "Next.js", "Vue", "Angular", "Node.js", "Express", "FastAPI"],
+    label: { en: "Development", fr: "Développement" },
+    items: ["React", "Next.js", "Svelte", "Tauri", "Node.js", "Express", "FastAPI", "Gin"],
   },
   {
     id: "cli",
@@ -118,21 +118,27 @@ export const skillGroups: SkillGroup[] = [
   {
     id: "data",
     label: { en: "Databases", fr: "Bases de données" },
-    items: ["PostgreSQL", "MongoDB", "Redis", "Supabase", "SQLite"],
+    items: ["PostgreSQL", "pgvector", "MongoDB", "SQLite", "Redis"],
   },
   {
     id: "cloud",
     label: { en: "Cloud & DevOps", fr: "Cloud & DevOps" },
-    items: ["Docker", "Linux", "Git & GitHub", "Cloudflare", "Azure", "Vercel"],
+    items: ["Docker", "AWS", "CI/CD", "Terraform", "Linux", "Git & GitHub"],
   },
   {
     id: "ai",
     label: { en: "AI & Agents", fr: "IA & Agents" },
-    items: ["Agentic Workflows", "Claude Code", "LangChain", "OpenAI API", "RAG", "Embeddings"],
+    items: ["Agentic Workflows", "Claude Code", "LangChain", "OpenAI API", "RAG", "Embeddings", "Vector Search", "AI Agents", "Prompt Engineering", "Neural Networks"],
+  },
+  {
+    id: "data-analysis",
+    label: { en: "Data", fr: "Données" },
+    items: ["NumPy", "Pandas", "Data Cleaning"],
   },
 ];
 
 export type Certification = {
+  preview?: string;
   file?: string;
   verify?: string;
   name: Record<Locale, string>;
@@ -171,6 +177,7 @@ export const certifications: Certification[] = [
   {
     name: { en: "Claude Code in Action", fr: "Claude Code in Action" },
     file: "/certificates/claude-code.pdf",
+    preview: "/certificates/claude-code-preview.png",
     verify: "https://verify.skilljar.com/c/k4ety3t79bf5",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
@@ -178,12 +185,14 @@ export const certifications: Certification[] = [
   {
     name: { en: "Introduction to Subagents", fr: "Introduction aux sous-agents" },
     file: "/certificates/subagents.pdf",
+    preview: "/certificates/subagents-preview.png",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
   },
   {
     name: { en: "Introduction to Agent Skills", fr: "Introduction aux Agent Skills" },
     file: "/certificates/agent-skills.pdf",
+    preview: "/certificates/agent-skills-preview.png",
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
   },
@@ -192,6 +201,7 @@ export const certifications: Certification[] = [
     issuer: "Anthropic",
     date: { en: "March 2026", fr: "Mars 2026" },
     file: "/certificates/ai-fluency.pdf",
+    preview: "/certificates/ai-fluency-preview.png",
   },
   {
     name: {

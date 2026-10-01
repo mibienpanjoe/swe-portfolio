@@ -78,12 +78,12 @@ export function Certifications() {
                 <X aria-hidden className="size-5" />
               </button>
             </div>
-            {selected.file?.endsWith(".pdf") ? (
+            {selected.file?.endsWith(".pdf") && !selected.preview ? (
               <iframe src={selected.file} title={selected.name[locale]} className="h-[60dvh] w-full border-0 bg-white" />
             ) : (
               // Preserve the original document and load it only when opened.
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={selected.file} alt={selected.name[locale]} className="max-h-[65dvh] w-full bg-white object-contain" />
+              <img src={selected.preview ?? selected.file} alt={selected.name[locale]} className="max-h-[65dvh] w-full bg-white object-contain" />
             )}
             <div className="border-t border-border px-4 py-2">
               <a href={selected.file} target="_blank" rel="noreferrer" className={actionClass}>
