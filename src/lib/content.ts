@@ -19,17 +19,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "lyn",
-    name: "Lyn",
-    tech: ["Rust", "Tauri", "Svelte", "SQLite"],
-    github: "https://github.com/mibienpanjoe/lyn",
-    gradient: "from-emerald-500/60 via-teal-600/40 to-neutral-900",
-    description: {
-      en: "Local-first desktop app for developers that captures notes, screenshots and voice memos without breaking flow. Associates captures with their project and Git branch, with a chronological library and local search. Core data stays on your machine.",
-      fr: "Application de bureau pour développeurs qui capture notes, captures d’écran et mémos vocaux sans interrompre le travail. Associe chaque capture à son projet et à sa branche Git, avec une bibliothèque chronologique et une recherche locale. Les données restent sur votre machine.",
-    },
-  },
-  {
     id: "jex",
     name: "jex",
     tech: ["Go", "TypeScript", "Next.js", "PostgreSQL", "Docker"],
@@ -43,27 +32,16 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "genius",
-    name: "genius",
-    tech: ["Go", "Bubble Tea", "Vision Models", "RAG"],
-    github: "https://github.com/mibienpanjoe/genius",
-    image: "/images/projects/genius.png",
-    gradient: "from-violet-500/60 via-purple-600/40 to-neutral-900",
+    id: "gitread",
+    name: "Gitread",
+    tech: ["Python", "FastAPI", "Next.js", "Redis", "AI"],
+    github: "https://github.com/mibienpanjoe/gitread",
+    live: "https://gitread-beta.vercel.app",
+    image: "/images/projects/gitread.png",
+    gradient: "from-cyan-500/60 via-teal-600/40 to-neutral-900",
     description: {
-      en: "Terminal study environment in Go that turns lecture PDFs/PPTs into study guides, revision Q&A and interactive quizzes, with vision-model captioning that keeps figures and notation faithful.",
-      fr: "Environnement d'étude en terminal écrit en Go qui transforme les PDF/PPT de cours en fiches, Q&R de révision et quiz interactifs, avec un sous-titrage par modèle de vision fidèle aux figures et notations.",
-    },
-  },
-  {
-    id: "scholar-ops",
-    name: "scholar-ops",
-    tech: ["Rust", "AI", "Local-first"],
-    github: "https://github.com/mibienpanjoe/scholar-ops",
-    image: "/images/projects/scholar-ops.png",
-    gradient: "from-rose-500/60 via-red-600/40 to-neutral-900",
-    description: {
-      en: "AI-powered scholarship search system that runs entirely on your machine, built in Rust for students hunting funding without giving their data away.",
-      fr: "Système de recherche de bourses propulsé par l'IA qui tourne entièrement en local, écrit en Rust pour les étudiants qui cherchent un financement sans céder leurs données.",
+      en: "AI-powered web app that turns a public GitHub profile into a structured developer profile for recruiters, with language charts, activity heatmaps and skill analysis. Compares your profile with job descriptions to highlight matching skills and gaps.",
+      fr: "Application web qui transforme un profil GitHub public en profil développeur structuré pour les recruteurs, avec graphiques de langages, calendrier d’activité et analyse des compétences par IA. Compare votre profil aux offres d’emploi pour identifier les compétences correspondantes et les écarts.",
     },
   },
   {
@@ -80,15 +58,38 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "torl",
-    name: "torL",
-    tech: ["Node.js", "Go", "Docker", "BitTorrent"],
-    github: "https://github.com/mibienpanjoe/torL",
-    image: "/images/projects/torL.png",
-    gradient: "from-cyan-500/60 via-teal-600/40 to-neutral-900",
+    id: "lyn",
+    name: "Lyn",
+    tech: ["Rust", "Tauri", "Svelte", "SQLite"],
+    github: "https://github.com/mibienpanjoe/lyn",
+    gradient: "from-emerald-500/60 via-teal-600/40 to-neutral-900",
     description: {
-      en: "A fast, dependency-light BitTorrent client built in Node.js with a TUI in Go: torrent files and magnet links, UDP/HTTP trackers plus Mainline DHT, rarest-first piece selection, pause/resume and UPnP/NAT-PMP port mapping.",
-      fr: "Un client BitTorrent rapide et léger écrit en Node.js avec une interface TUI en Go : fichiers .torrent et liens magnet, trackers UDP/HTTP plus DHT Mainline, sélection rarest-first, pause/reprise et mapping de ports UPnP/NAT-PMP.",
+      en: "Local-first desktop app for developers that captures notes, screenshots and voice memos without breaking flow. Associates captures with their project and Git branch, with a chronological library and local search. Core data stays on your machine.",
+      fr: "Application de bureau pour développeurs qui capture notes, captures d’écran et mémos vocaux sans interrompre le travail. Associe chaque capture à son projet et à sa branche Git, avec une bibliothèque chronologique et une recherche locale. Les données restent sur votre machine.",
+    },
+  },
+  {
+    id: "genius",
+    name: "genius",
+    tech: ["Go", "Bubble Tea", "Vision Models", "RAG"],
+    github: "https://github.com/mibienpanjoe/genius",
+    image: "/images/projects/genius.png",
+    gradient: "from-violet-500/60 via-purple-600/40 to-neutral-900",
+    description: {
+      en: "Terminal study environment in Go that turns lecture PDFs/PPTs into study guides, revision Q&A and interactive quizzes, with vision-model captioning that keeps figures and notation faithful.",
+      fr: "Environnement d'étude en terminal écrit en Go qui transforme les PDF/PPT de cours en fiches, Q&R de révision et quiz interactifs, avec un sous-titrage par modèle de vision fidèle aux figures et notations.",
+    },
+  },
+  {
+    id: "stipen",
+    name: "Stipen",
+    tech: ["Rust", "Node.js", "AI Agents", "Ratatui"],
+    github: "https://github.com/mibienpanjoe/stipen",
+    image: "/images/projects/scholar-ops.png",
+    gradient: "from-rose-500/60 via-red-600/40 to-neutral-900",
+    description: {
+      en: "AI scholarship assistant for the terminal that checks eligibility, scores opportunities against your profile and tracks application deadlines. Includes a Rust dashboard, with your profile and tracker stored locally.",
+      fr: "Assistant IA de recherche de bourses en terminal qui vérifie l’éligibilité, évalue les opportunités selon votre profil et suit les échéances de candidature. Comprend un tableau de bord en Rust, avec le profil et le suivi conservés en local.",
     },
   },
 ];
